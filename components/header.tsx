@@ -8,7 +8,7 @@ type Props = {};
  */
 const Header: React.FC<Props> = () => {
   return (
-    <div>This is header</div>
+    <div className="font-black">This is header</div>
   );
 }
 

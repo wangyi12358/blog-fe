@@ -8,7 +8,7 @@ type Props = {};
  */
 const Index: React.FC<Props> = () => {
   return (
-    <div>Home Page</div>
+    <div className="flex-auto">Home Page</div>
   );
 }
 
