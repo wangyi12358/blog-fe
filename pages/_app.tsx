@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '@/components/layout'
+import 'tailwindcss/tailwind.css'
+import '../app/globals.css'
 
 type Props = {
   Component: () => JSX.Element;

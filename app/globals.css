@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-color: rgb(38, 42, 51);
+  --text-color: rgb(157, 159, 158);
+  --primary: rgb(222, 96, 18)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +20,30 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color);
+  background: var(--background-color);
+  min-height: 100vh;
+}
+
+.layout-container {
+  background: rgb(30, 34, 43);
+}
+
+.layout-background {
+  background-size: 161px;
+  background-repeat: repeat;
+  background-image: url("/bg.png");
+  opacity: 0.03;
+}
+
+@layer components {
+  .tab {
+    color: var(--text-color);
+  }
+  .tab:hover {
+    color: var(--primary)
+  }
+  .tab-active {
+    color: var(--primary)
+  }
 }

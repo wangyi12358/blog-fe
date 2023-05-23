@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { type Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: [ 'latin' ] })
 const title = 'Mika | 全栈开发者'
 
 export const metadata: Metadata = {
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     default: title,
   },
   keywords: '开发,前端,后端,Blog,技术,Mika',
+
 }
 
 export default function RootLayout({
