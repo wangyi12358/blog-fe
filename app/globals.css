@@ -36,6 +36,12 @@ body {
   opacity: 0.03;
 }
 
+@layer base {
+  h2 {
+    font-size: xx-large;
+  }
+}
+
 @layer components {
   .tab {
     color: var(--text-color);
