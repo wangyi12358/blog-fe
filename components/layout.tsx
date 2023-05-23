@@ -14,7 +14,7 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="max-w-3xl mx-auto">
       <Header />
-      <main>{children}</main>
+      {children}
       <Footer />
     </div>
   );

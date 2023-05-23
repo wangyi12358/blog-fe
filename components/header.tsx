@@ -15,14 +15,14 @@ const HEADER_ITEMS: Item[] = [
  */
 const Header: React.FC<Props> = () => {
   return (
-    <div className="flex items-center justify-center h-14 relative layout-container rounded-b-sm">
+    <header className="flex items-center justify-center h-14 relative layout-container rounded-b-sm">
       <div className="layout-background absolute" />
       <Tab
         className=""
         defaultValue="home"
         items={HEADER_ITEMS}
       />
-    </div>
+    </header>
   );
 }
 
