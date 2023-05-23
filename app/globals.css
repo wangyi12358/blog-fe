@@ -36,6 +36,10 @@ body {
   opacity: 0.03;
 }
 
+.hover\:primary-color:hover {
+  color: var(--primary);
+}
+
 @layer base {
   h2 {
     font-size: xx-large;
@@ -45,9 +49,6 @@ body {
 @layer components {
   .tab {
     color: var(--text-color);
-  }
-  .tab:hover {
-    color: var(--primary)
   }
   .tab-active {
     color: var(--primary)

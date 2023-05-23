@@ -16,7 +16,7 @@ const TabItem: FC<TabItemProps> = memo((props) => {
   return (
     <a
       onClick={onClick}
-      className={classnames('tab',
+      className={classnames('tab hover:primary-color duration-300',
         { ['tab-active']: selected }
       )}>
       {label}
