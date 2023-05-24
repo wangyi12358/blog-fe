@@ -36,6 +36,10 @@ body {
   opacity: 0.03;
 }
 
+.primary-color {
+  color: var(--primary);
+}
+
 .hover\:primary-color:hover {
   color: var(--primary);
 }
@@ -43,6 +47,9 @@ body {
 @layer base {
   h2 {
     font-size: xx-large;
+  }
+  h3 {
+    font-size: x-large;
   }
 }
 

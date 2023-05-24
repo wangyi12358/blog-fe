@@ -8,7 +8,7 @@ type Props = {};
  */
 const Blog: React.FC<Props> = () => {
   return (
-    <div>This is my Blog</div>
+    <div>开发中。。。</div>
   );
 }
 

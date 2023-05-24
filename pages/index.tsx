@@ -55,9 +55,20 @@ const PersonalInfo = () => {
         <div className="text-center mt-2">@Mika_wang</div>
         <h2 className="text-center text-white font-bold">Mika wang</h2>
         {renderContacts()}
-        <div className="mt-4 w-1/2 text-center">
+        <div className="mt-4 w-80 text-center">
           我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。
         </div>
+      </div>
+    </div>
+  )
+}
+
+const Projects = () => {
+  return (
+    <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
+      <div className="layout-background absolute" />
+      <div>
+        This is my projects
       </div>
     </div>
   )
@@ -70,8 +81,9 @@ const PersonalInfo = () => {
 const Index: React.FC<Props> = () => {
 
   return (
-    < >
+    <>
       <PersonalInfo />
+      <Projects />
     </>
   );
 }

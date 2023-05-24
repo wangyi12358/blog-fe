@@ -8,7 +8,7 @@ type Props = {};
  */
 const Project: React.FC<Props> = () => {
   return (
-    <div>Project</div>
+    <div>开发中。。。</div>
   );
 }
 
