@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from "@/components/ui/avatar";
+import Avatar from '@/components/ui/avatar';
 import Github from '@/components/icons/github'
 import Twitter from '@/components/icons/twitter'
 import Telegram from '@/components/icons/telegram'
