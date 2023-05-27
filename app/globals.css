@@ -61,6 +61,12 @@ body {
 }
 
 @layer components {
+  .clickable {
+    @apply cursor-pointer duration-300
+  }
+  .clickable:hover {
+    @apply hover:primary-color
+  }
   .tab {
     color: var(--text-color);
   }

@@ -4,6 +4,8 @@ import Github from '@/components/icons/github'
 import Twitter from '@/components/icons/twitter'
 import Telegram from '@/components/icons/telegram'
 import Email from '@/components/icons/email'
+import Posts from '@/components/blog/posts'
+import { FEATURED_POSTS } from '@/common/posts'
 
 type Props = {};
 
@@ -63,6 +65,18 @@ const PersonalInfo = () => {
   )
 }
 
+const Blogs = () => {
+  return (
+    <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
+      <div className="layout-background absolute" />
+      <div className="w-full">
+        <h3 className="primary-color">博客</h3>
+        <Posts posts={FEATURED_POSTS} />
+      </div>
+    </div>
+  )
+}
+
 const Projects = () => {
   return (
     <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
@@ -83,7 +97,8 @@ const Index: React.FC<Props> = () => {
   return (
     <>
       <PersonalInfo />
-      <Projects />
+      <Blogs />
+      {/*<Projects />*/}
     </>
   );
 }
