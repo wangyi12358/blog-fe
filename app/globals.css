@@ -44,12 +44,19 @@ body {
   color: var(--primary);
 }
 
+.hover\:primary-color-chevron-right:hover .chevron-right {
+  color: var(--primary);
+}
+
 @layer base {
   h2 {
     font-size: xx-large;
   }
   h3 {
     font-size: x-large;
+  }
+  h4 {
+    font-size: large;
   }
 }
 

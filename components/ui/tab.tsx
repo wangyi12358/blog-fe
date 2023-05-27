@@ -4,7 +4,6 @@ import { BaseFormProps } from '@/utils/baseProps'
 import usePropsValue from '@/hooks/usePropsValue'
 import { mergeProps } from '@/utils/mergeProps'
 import classnames from 'classnames'
-
 interface TabItemProps {
   label: React.ReactNode
   selected: boolean
@@ -25,6 +24,7 @@ const TabItem: FC<TabItemProps> = memo((props) => {
 })
 
 TabItem.displayName = 'TabItem'
+
 
 export interface Item {
   value: React.Key;
