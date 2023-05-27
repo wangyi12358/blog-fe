@@ -32,7 +32,7 @@ const PersonalInfo = () => {
 
   function renderContacts() {
     return (
-      <div className="mt-2 flex gap-6">
+      <div className="flex gap-6">
         {contacts.map((item, index) => {
           return (
             <a

@@ -4,24 +4,23 @@ import Router from 'next/router';
 import dayjs from 'dayjs';
 import ChevronRight from '@/components/icons/chevron-right';
 import classnames from 'classnames';
-import isMobile from 'is-mobile'
 
 type Props = {
   posts: Post[]
-  padding?: boolean
+  className?: string
 };
 
 /**
  * @Author: wangyi
  * @Date: 2023-05-27
  */
-const Posts: React.FC<Props> = ({ posts, padding }) => {
-  console.log('isMobile=', isMobile())
+const Posts: React.FC<Props> = ({ posts, className }) => {
 
   return (
     <div
-      className={classnames('flex flex-col items-center relative layout-container rounded mt-6',
-        { ['p-8']: padding }
+      className={classnames(
+        'flex flex-col items-center relative layout-container rounded',
+        className,
       )}>
       {posts.map((post, index) => {
 
@@ -39,7 +38,7 @@ const Posts: React.FC<Props> = ({ posts, padding }) => {
           >
             <div className="h-full basis-full">
               <h4 onClick={onClick} className="text-lg text-white clickable">{post.title}</h4>
-              <div className="mt-2 text-sm">{post.desc}</div>
+              <div className="text-sm">{post.desc}</div>
               <div className="mt-2 flex justify-between text-sm">
                 <span>{dayjs(post.date).format('L')}</span>
                 <span>{post.readTime}分钟阅读</span>
