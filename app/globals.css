@@ -69,7 +69,7 @@ body {
     @apply hover:primary-color
   }
   .container-card {
-    @apply flex items-center justify-center mt-6 relative layout-container rounded-sm p-5 md:p-8
+    @apply flex items-center justify-center mt-6 relative layout-container rounded p-5 md:p-8
   }
   .tab {
     color: var(--text-color);

@@ -20,7 +20,7 @@ const Posts: React.FC<Props> = ({ posts, padding }) => {
 
   return (
     <div
-      className={classnames('flex flex-col items-center relative layout-container rounded-sm mt-6',
+      className={classnames('flex flex-col items-center relative layout-container rounded mt-6',
         { ['p-8']: padding }
       )}>
       {posts.map((post, index) => {
