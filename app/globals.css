@@ -48,6 +48,12 @@ body {
   color: var(--primary);
 }
 
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white
+  }
+}
+
 @layer components {
   .title {
     font-size: xx-large;
