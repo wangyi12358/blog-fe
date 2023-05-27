@@ -50,12 +50,12 @@ const PersonalInfo = () => {
   }
 
   return (
-    <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
+    <div className="container-card">
       <div className="layout-background absolute" />
       <div className="flex flex-col items-center">
         <Avatar src="https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/avatar.jpg"/>
         <div className="text-center mt-2">@Mika_wang</div>
-        <h2 className="text-center text-white font-bold">Mika wang</h2>
+        <h2 className="text-center text-white font-bold title">Mika wang</h2>
         {renderContacts()}
         <div className="mt-4 w-80 text-center">
           我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。
@@ -67,10 +67,10 @@ const PersonalInfo = () => {
 
 const Blogs = () => {
   return (
-    <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
+    <div className="container-card">
       <div className="layout-background absolute" />
       <div className="w-full">
-        <h3 className="primary-color">博客</h3>
+        <h3 className="primary-color subtitle">博客</h3>
         <Posts posts={FEATURED_POSTS} />
       </div>
     </div>

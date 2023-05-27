@@ -48,24 +48,22 @@ body {
   color: var(--primary);
 }
 
-@layer base {
-  h2 {
+@layer components {
+  .title {
     font-size: xx-large;
+    font-weight: 600;
   }
-  h3 {
+  .subtitle {
     font-size: x-large;
   }
-  h4 {
-    font-size: large;
-  }
-}
-
-@layer components {
   .clickable {
     @apply cursor-pointer duration-300
   }
   .clickable:hover {
     @apply hover:primary-color
+  }
+  .container-card {
+    @apply flex items-center justify-center mt-6 relative layout-container rounded-sm p-5 md:p-8
   }
   .tab {
     color: var(--text-color);

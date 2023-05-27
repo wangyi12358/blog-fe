@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/lodash': ^4.14.194
+  '@types/marked': ^5.0.0
   '@types/node': 20.1.1
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
@@ -12,7 +13,9 @@ specifiers:
   dayjs: ^1.11.7
   eslint: 8.40.0
   eslint-config-next: 13.4.1
+  is-mobile: ^4.0.0
   lodash: ^4.17.21
+  marked: ^5.0.3
   next: 13.4.1
   postcss: 8.4.23
   react: 18.2.0
@@ -31,7 +34,9 @@ dependencies:
   dayjs: 1.11.7
   eslint: 8.40.0
   eslint-config-next: 13.4.1_3qfatcekpgbllh6uk5ivyhkbxq
+  is-mobile: 4.0.0
   lodash: 4.17.21
+  marked: 5.0.3
   next: 13.4.1_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.23
   react: 18.2.0
@@ -41,6 +46,7 @@ dependencies:
 
 devDependencies:
   '@types/lodash': 4.14.194
+  '@types/marked': 5.0.0
 
 packages:
 
@@ -291,6 +297,10 @@ packages:
 
   /@types/lodash/4.14.194:
     resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+    dev: true
+
+  /@types/marked/5.0.0:
+    resolution: {integrity: sha512-YcZe50jhltsCq7rc9MNZC/4QB/OnA2Pd6hrOSTOFajtabN+38slqgDDCeE/0F83SjkKBQcsZUj7VLWR0H5cKRA==}
     dev: true
 
   /@types/node/20.1.1:
@@ -1686,6 +1696,10 @@ packages:
     resolution: {integrity: sha512-cOZFQQozTha1f4MxLFzlgKYPTyj26picdZTx82hbc/Xf4K/tZOOXSCkMvU4pKioRXGDLJRn0GM7Upe7kR721yg==}
     dev: false
 
+  /is-mobile/4.0.0:
+    resolution: {integrity: sha512-mlcHZA84t1qLSuWkt2v0I2l61PYdyQDt4aG1mLIXF5FDMm4+haBCxCPYSr/uwqQNRk1MiTizn0ypEuRAOLRAew==}
+    dev: false
+
   /is-negative-zero/2.0.2:
     resolution: {integrity: sha512-dqJvarLawXsFbNDeJW7zAz8ItJ9cd28YufuuFzh0G8pNHjJMnY08Dv7sYX2uF5UpQOwieAeOExEYAWWfu7ZZUA==}
     engines: {node: '>= 0.4'}
@@ -1894,6 +1908,12 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /marked/5.0.3:
+    resolution: {integrity: sha512-KUONa43Uk74uUNWMxh6lfaNYmSAsRMiDAaX8QBCCRVXzEufR0zX6T33vrGbvTnQLL02ungDM3KSzZtO+chJaHg==}
+    engines: {node: '>= 18'}
+    hasBin: true
     dev: false
 
   /merge-stream/2.0.0:
