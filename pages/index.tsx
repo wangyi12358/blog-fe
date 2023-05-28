@@ -33,7 +33,7 @@ const PersonalInfo = () => {
 
   function renderContacts() {
     return (
-      <div className="flex gap-6">
+      <div className="animation-enter-from-bottom flex gap-6">
         {contacts.map((item, index) => {
           return (
             <a
@@ -55,8 +55,8 @@ const PersonalInfo = () => {
       <div className="layout-background absolute" />
       <div className="flex flex-col items-center">
         <Avatar src="https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/avatar.jpg"/>
-        <div className="text-center mt-2">@Mika_wang</div>
-        <h2 className="text-center text-white font-bold title">Mika wang</h2>
+        <div className="animation-enter-from-bottom text-center mt-2">@Mika_wang</div>
+        <h2 className="animation-enter-from-bottom text-center text-white font-bold title">Mika wang</h2>
         {renderContacts()}
         <div className="mt-4 w-80 text-center">
           <Typewriter

@@ -63,6 +63,17 @@ body {
   }
 }
 
+@keyframes enter-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @layer components {
   .title {
     font-size: xx-large;
@@ -70,6 +81,9 @@ body {
   }
   .subtitle {
     font-size: x-large;
+  }
+  .animation-enter-from-bottom {
+    animation: enter-from-bottom 1s ease;
   }
   .clickable {
     @apply cursor-pointer duration-300
