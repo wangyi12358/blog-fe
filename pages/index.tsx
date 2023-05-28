@@ -6,6 +6,7 @@ import Telegram from '@/components/icons/telegram'
 import Email from '@/components/icons/email'
 import Posts from '@/components/blog/posts'
 import { FEATURED_POSTS } from '@/common/posts'
+import Typewriter from 'typewriter-effect'
 
 type Props = {};
 
@@ -58,7 +59,13 @@ const PersonalInfo = () => {
         <h2 className="text-center text-white font-bold title">Mika wang</h2>
         {renderContacts()}
         <div className="mt-4 w-80 text-center">
-          我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。
+          <Typewriter
+            onInit={(typewriter)=> {
+              typewriter
+                .typeString('我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。')
+                .start();
+            }}
+          />
         </div>
       </div>
     </div>
