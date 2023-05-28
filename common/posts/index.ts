@@ -9,7 +9,7 @@ export interface Post {
 // all post
 export const ALL_POSTS: Post[] = [
   {
-    title: 'Go 逃逸分析（还在编写中）',
+    title: 'Go 逃逸分析',
     desc: '什么是逃逸分析？什么是指针逃逸？堆栈是什么？，接下来带大家一起探索。',
     filename: 'go-escape',
     date: '2023-5-27',

@@ -94,3 +94,14 @@ main.go:15:16: leaking param content: demo
 main.go:16:13: ... argument does not escape
 main.go:16:18: demo.name escapes to heap
 ```
+
+> 这种情况下，局部变量 demo 不会发生逃逸，但是 demo.name 仍旧会逃逸。
+
+## 结论
+> 指针传递可以减少值的拷贝，但是会导致内存分配逃逸到堆中，增加GC的负担。<br />
+> 值传递会拷贝整个对象，不会对GC产生负担。
+
+> 所以我给大家的建议是：<br />
+> 在对象频繁创建和删除的场景下，使用值传递。<br />
+> 对于只读的占用内存较小的结构体，使用值传递。<br />
+> 需要修改原对象值，或占用内存比较大的结构体，使用指针传递。
