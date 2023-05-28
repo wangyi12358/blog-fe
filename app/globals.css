@@ -55,6 +55,9 @@ body {
   p {
     @apply my-4
   }
+  code {
+    @apply rounded-md
+  }
 }
 
 @layer components {

@@ -4,6 +4,22 @@ import { ALL_POSTS } from '@/common/posts'
 import Empty from '@/components/ui/empty'
 import dayjs from 'dayjs'
 import { marked } from 'marked'
+import { markedHighlight } from 'marked-highlight'
+import hljs from 'highlight.js';
+import go from 'highlight.js/lib/languages/go'
+import bash from 'highlight.js/lib/languages/bash'
+import 'highlight.js/styles/androidstudio.css'
+// devibeans  base16/railscasts
+
+hljs.registerLanguage('go', go);
+hljs.registerLanguage('bash', bash);
+marked.use(markedHighlight({
+  langPrefix: 'hljs language-',
+  highlight(code, lang) {
+    const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+    return hljs.highlight(code, { language }).value;
+  }
+}));
 
 type Props = {};
 
