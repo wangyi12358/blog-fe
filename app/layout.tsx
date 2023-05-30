@@ -11,11 +11,10 @@ export const metadata: Metadata = {
     'https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/apu26-qpocc-001.ico'
   ],
   title: {
-    template: '%s | Cali Castle',
+    template: '%s | Mika Wang',
     default: title,
   },
   keywords: '开发,前端,后端,Blog,技术,Mika',
-
 }
 
 export default function RootLayout({
