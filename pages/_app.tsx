@@ -13,16 +13,13 @@ type Props = {
   pageProps: any
 };
 
-/**
- * @Author: wangyi
- * @Date: 2023-05-09
- */
-const App: React.FC<Props> = ({ Component, pageProps }) => {
+function App({ Component, pageProps }: Props) {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
+
 }
 
 export default App;

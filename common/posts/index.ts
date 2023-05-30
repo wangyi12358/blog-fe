@@ -4,6 +4,7 @@ export interface Post {
   filename: string
   date: string
   readTime: number // minute
+  body?: string
 }
 
 // all post

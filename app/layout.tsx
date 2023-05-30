@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-CN">
+    <html className="dark" lang="zh-CN">
       <body className={inter.className}>{children}</body>
     </html>
   )

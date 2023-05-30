@@ -8,8 +8,6 @@ import Posts from '@/components/blog/posts'
 import { FEATURED_POSTS } from '@/common/posts'
 import Typewriter from 'typewriter-effect'
 
-type Props = {};
-
 const contacts = [
   {
     icon: <Github />,
@@ -29,8 +27,7 @@ const contacts = [
   }
 ]
 
-const PersonalInfo = () => {
-
+function PersonalInfo() {
   function renderContacts() {
     return (
       <div className="animation-enter-from-bottom flex gap-6">
@@ -72,7 +69,8 @@ const PersonalInfo = () => {
   )
 }
 
-const Blogs = () => {
+function Blogs() {
+
   return (
     <div className="container-card">
       <div className="layout-background absolute" />
@@ -84,7 +82,7 @@ const Blogs = () => {
   )
 }
 
-const Projects = () => {
+function Projects() {
   return (
     <div className="flex items-center justify-center mt-6 relative layout-container rounded-sm p-8">
       <div className="layout-background absolute" />
@@ -95,11 +93,7 @@ const Projects = () => {
   )
 }
 
-/**
- * @Author: wangyi
- * @Date: 2023-05-09
- */
-const Index: React.FC<Props> = () => {
+function Index() {
 
   return (
     <>
