@@ -56,13 +56,14 @@ function PersonalInfo() {
         <h2 className="animation-enter-from-bottom text-center text-white font-bold title">Mika wang</h2>
         {renderContacts()}
         <div className="mt-4 w-80 text-center">
-          <Typewriter
-            onInit={(typewriter)=> {
-              typewriter
-                .typeString('我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。')
-                .start();
-            }}
-          />
+          {/*<Typewriter*/}
+          {/*  onInit={(typewriter)=> {*/}
+          {/*    typewriter*/}
+          {/*      .typeString('我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。')*/}
+          {/*      .start();*/}
+          {/*  }}*/}
+          {/*/>*/}
+          我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。
         </div>
       </div>
     </div>
@@ -93,7 +94,7 @@ function Projects() {
   )
 }
 
-function Index() {
+function HomePage() {
 
   return (
     <>
@@ -104,4 +105,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default HomePage;

@@ -24,6 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="dark" lang="zh-CN">
+      <head>
+        <title>Mika | 全栈开发者</title>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
