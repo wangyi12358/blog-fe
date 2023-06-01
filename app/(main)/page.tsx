@@ -7,6 +7,7 @@ import Email from '@/components/icons/email'
 import Posts from '@/components/blog/posts'
 import { FEATURED_POSTS } from '@/common/posts'
 import Typewriter from 'typewriter-effect'
+import Bio from './bio'
 
 const contacts = [
   {
@@ -56,14 +57,7 @@ function PersonalInfo() {
         <h2 className="animation-enter-from-bottom text-center text-white font-bold title">Mika wang</h2>
         {renderContacts()}
         <div className="mt-4 w-80 text-center">
-          {/*<Typewriter*/}
-          {/*  onInit={(typewriter)=> {*/}
-          {/*    typewriter*/}
-          {/*      .typeString('我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。')*/}
-          {/*      .start();*/}
-          {/*  }}*/}
-          {/*/>*/}
-          我是 Mika，一名全栈工程师，主要技术栈 React、Typescript、Nodejs、Golang，我热爱Coding、创新、生活、以及探索和学习未知的领域。
+          <Bio />
         </div>
       </div>
     </div>
@@ -100,7 +94,6 @@ function HomePage() {
     <>
       <PersonalInfo />
       <Blogs />
-      {/*<Projects />*/}
     </>
   );
 }

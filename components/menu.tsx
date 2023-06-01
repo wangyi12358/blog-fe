@@ -1,3 +1,4 @@
+'use client'
 import { usePathname } from 'next/navigation';
 import Tab, { Item } from '@/components/ui/tab';
 import Router from 'next/router';
@@ -12,7 +13,7 @@ const HEADER_ITEMS: Item[] = [
 
 const Menu = () => {
   const pathname = usePathname()
-  const [selected, setSelected] = useState('')
+  const [selected, setSelected] = useState('home')
 
   useEffect(() => {
     const v = HEADER_ITEMS.find(i => {
