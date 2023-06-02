@@ -3,6 +3,7 @@ import { Post } from '@/common/posts'
 import Link from 'next/link';
 import ChevronRight from '@/components/icons/chevron-right';
 import classnames from 'classnames';
+import { formatDate } from '@/utils/date';
 
 type Props = {
   posts: Post[]
@@ -38,7 +39,7 @@ const Posts: React.FC<Props> = ({ posts, className }) => {
               </Link>
               <div className="text-sm">{post.desc}</div>
               <div className="mt-2 flex justify-between text-sm">
-                <span>{Intl.DateTimeFormat('zh').format(new Date(post.date))}</span>
+                <span>{formatDate(post.date)}</span>
                 <span>{post.readTime}分钟阅读</span>
               </div>
             </div>
