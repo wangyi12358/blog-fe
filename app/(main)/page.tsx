@@ -6,7 +6,6 @@ import Telegram from '@/components/icons/telegram'
 import Email from '@/components/icons/email'
 import Posts from '@/components/blog/posts'
 import { FEATURED_POSTS } from '@/common/posts'
-import Typewriter from 'typewriter-effect'
 import Bio from './bio'
 
 const contacts = [
