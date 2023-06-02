@@ -1,7 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import Tab, { Item } from '@/components/ui/tab';
-import Router from 'next/router';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 const HEADER_ITEMS: Item[] = [
@@ -14,6 +14,7 @@ const HEADER_ITEMS: Item[] = [
 const Menu = () => {
   const pathname = usePathname()
   const [selected, setSelected] = useState('home')
+  const router = useRouter()
 
   useEffect(() => {
     const v = HEADER_ITEMS.find(i => {
@@ -32,7 +33,7 @@ const Menu = () => {
       items={HEADER_ITEMS}
       onChange={e => {
         setSelected(e as string)
-        Router.push(HEADER_ITEMS.find(i => i.value === e)?.link)
+        router.push(HEADER_ITEMS.find(i => i.value === e)?.link)
       }}
     />
   )

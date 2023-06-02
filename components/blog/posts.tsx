@@ -1,7 +1,6 @@
 import React from 'react';
 import { Post } from '@/common/posts'
-// import { useRouter } from 'next/navigation';
-import dayjs from 'dayjs';
+import Link from 'next/link';
 import ChevronRight from '@/components/icons/chevron-right';
 import classnames from 'classnames';
 
@@ -16,8 +15,6 @@ type Props = {
  */
 const Posts: React.FC<Props> = ({ posts, className }) => {
 
-  // const router = useRouter()
-
   return (
     <div
       className={classnames(
@@ -25,10 +22,7 @@ const Posts: React.FC<Props> = ({ posts, className }) => {
         className,
       )}>
       {posts.map((post, index) => {
-
-        const onClick = () => {
-          // router.push(`/blog/${post.filename}`)
-        }
+        const href = `/blog/${post.filename}`
 
         return (
           <div
@@ -39,19 +33,23 @@ const Posts: React.FC<Props> = ({ posts, className }) => {
             key={`post_${index}`}
           >
             <div className="h-full basis-full">
-              <h4 className="text-lg text-white clickable">{post.title}</h4>
+              <Link href={href}>
+                <h4 className="text-lg text-white clickable">{post.title}</h4>
+              </Link>
               <div className="text-sm">{post.desc}</div>
               <div className="mt-2 flex justify-between text-sm">
-                <span>{dayjs(post.date).format('L')}</span>
+                <span>{Intl.DateTimeFormat('zh').format(new Date(post.date))}</span>
                 <span>{post.readTime}分钟阅读</span>
               </div>
             </div>
-            <div
-              style={{ backgroundColor: 'rgb(30, 34, 43)' }}
-              className="clickable text-white text-lg w-8 h-8 blog-post-right ml-12 hidden md:block"
-            >
-              <ChevronRight className="chevron-right h-full m-auto" />
-            </div>
+            <Link href={href}>
+              <div
+                style={{ backgroundColor: 'rgb(30, 34, 43)' }}
+                className="clickable text-white text-lg w-8 h-8 blog-post-right ml-12 hidden md:block"
+              >
+                  <ChevronRight className="chevron-right h-full m-auto" />
+              </div>
+            </Link>
           </div>
         )
       })}
