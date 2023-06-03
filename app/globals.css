@@ -112,4 +112,8 @@ body {
   .spinner-container {
     @apply w-full mt-4 text-center
   }
+
+  .markdown-react a {
+    @apply clickable underline
+  }
 }
