@@ -23,13 +23,13 @@ export const ALL_POSTS: Post[] = [
     date: '2023-5-27',
     readTime: 7
   },
-  // {
-  //   title: 'Web3',
-  //   desc: '什么是web3？什么是区块链？什么是DApp？什么是智能合约？web3需要了解什么知识？接下来我会带大家一起探索web3。',
-  //   filename: 'web3',
-  //   date: '2023-5-27',
-  //   readTime: 3
-  // }
+  {
+    title: 'Web3.0（编写中）',
+    desc: '什么是web3？什么是区块链？什么是DApp？什么是智能合约？web3需要了解什么知识？接下来我会带大家一起探索web3。',
+    filename: 'web3',
+    date: '2023-6-04',
+    readTime: 5
+  }
 ]
 
 // featured posts
