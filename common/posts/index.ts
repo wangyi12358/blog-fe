@@ -29,6 +29,13 @@ export const ALL_POSTS: Post[] = [
     filename: 'web3',
     date: '2023-6-04',
     readTime: 5
+  },
+  {
+    title: '代码规范',
+    desc: '接下来如何带大家写出维护性、可读性、复用性高的代码，让大家的代码跟你人一样漂亮。',
+    filename: 'code-standard',
+    date: '2023-6-09',
+    readTime: 5
   }
 ]
 
@@ -36,4 +43,5 @@ export const ALL_POSTS: Post[] = [
 export const FEATURED_POSTS: Post[] = [
   ALL_POSTS[0],
   ALL_POSTS[1],
+  ALL_POSTS[3],
 ]
