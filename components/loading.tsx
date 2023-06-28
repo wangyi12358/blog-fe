@@ -3,7 +3,7 @@
 export default function LoadingSpinner() {
   return (
     <div className="spinner-container">
-      Loading...
+      <span className="loading loading-dots loading-lg" />
     </div>
   );
 }

@@ -31,7 +31,7 @@ function BlogPost({ params }: {
         <div className="mt-6 text-center text-sm">{formatDate(post?.date)}</div>
       </div>
       <div className="container-card">
-        <div className="w-full prose dark:prose-invert">
+        <div className="w-full">
           <Markdown>
             {post.body ?? ''}
           </Markdown>

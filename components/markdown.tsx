@@ -18,5 +18,5 @@ const renderer: any = {
 };
 
 export default function Markdown({ children }: { children: string }) {
-  return <div className="markdown-react"><MarkedReact renderer={renderer}>{children}</MarkedReact></div>
+  return <article className="markdown-react prose"><MarkedReact renderer={renderer}>{children}</MarkedReact></article>
 }
