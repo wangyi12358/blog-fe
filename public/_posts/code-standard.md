@@ -39,7 +39,7 @@ const Component: React.FC = () => {
 ```ts
 // productName 千万不要使用缩写命名法。
 const pn = '' // ❎
-```
+```  
 
 ## React 规范
 

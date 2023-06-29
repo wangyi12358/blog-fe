@@ -10,7 +10,7 @@ type Props = {};
 const Header: React.FC<Props> = () => {
 
   return (
-    <header className="flex items-center justify-center h-14 relative layout-container rounded-b">
+    <header className="flex items-center justify-center h-14 relative layout-container rounded-b animation-fade-in">
       <div className="layout-background absolute" />
       <Menu />
     </header>

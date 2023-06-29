@@ -48,7 +48,7 @@ function PersonalInfo() {
   }
 
   return (
-    <div className="container-card">
+    <div className="container-card animation-enter-from-bottom">
       <div className="layout-background absolute" />
       <div className="flex flex-col items-center">
         <Avatar src="https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/avatar.jpg"/>
@@ -66,7 +66,7 @@ function PersonalInfo() {
 function Blogs() {
 
   return (
-    <div className="container-card">
+    <div className="container-card animation-enter-from-bottom">
       <div className="layout-background absolute" />
       <div className="w-full">
         <h3 className="primary-color subtitle">博客</h3>
