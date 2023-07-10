@@ -93,6 +93,9 @@ body {
 }
 
 @layer components {
+  .flex-direction {
+    @apply flex flex-col
+  }
   .title {
     font-size: xx-large;
     font-weight: 600;

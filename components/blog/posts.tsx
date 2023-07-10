@@ -19,7 +19,7 @@ const Posts: React.FC<Props> = ({ posts, className }) => {
   return (
     <div
       className={classnames(
-        'flex flex-col gap-4 items-center relative layout-container rounded',
+        'flex flex-col gap-4 items-center relative layout-container rounded animation-enter-from-bottom',
         className,
       )}>
       {posts.map((post, index) => {
