@@ -18,6 +18,7 @@ specifiers:
   framer-motion: ^10.12.18
   highlight.js: ^11.8.0
   lodash: ^4.17.21
+  lucide-react: ^0.259.0
   marked-highlight: ^2.0.1
   marked-react: ^1.3.2
   next: 13.4.1
@@ -45,6 +46,7 @@ dependencies:
   framer-motion: 10.12.18_biqbaboplfbrettd7655fr4n2y
   highlight.js: 11.8.0
   lodash: 4.17.21
+  lucide-react: 0.259.0_react@18.2.0
   marked-highlight: 2.0.1
   marked-react: 1.3.2_react@18.2.0
   next: 13.4.1_biqbaboplfbrettd7655fr4n2y
@@ -2012,6 +2014,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /lucide-react/0.259.0_react@18.2.0:
+    resolution: {integrity: sha512-dFBLc6jRDfcpD9NQ7NyFVa+YR3RHX6+bs+f/UiotvNPho+kd4WyeXWMCCchUf7i/pq3BAaHkbmtkbx/GxxHVUw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /marked-highlight/2.0.1:

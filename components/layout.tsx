@@ -14,8 +14,8 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="max-w-3xl mx-auto min-h-screen flex-direction">
       <Header />
-      <main className="flex-1">{children}</main>
-      <Footer />
+      {/*<main className="flex-1">{children}</main>*/}
+      {/*<Footer />*/}
     </div>
   );
 }
