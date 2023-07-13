@@ -7,7 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --background-color: rgb(38, 42, 51);
-  --text-color: rgb(157, 159, 158);
+  --text-color: rgb(82, 82, 91);
   --primary: rgb(222, 96, 18)
 }
 
@@ -116,7 +116,7 @@ body {
     @apply hover:primary-color
   }
   .container-card {
-    @apply flex items-center justify-center mt-6 relative layout-container rounded p-5 md:p-8
+    @apply flex flex-col items-center
   }
   .tab {
     color: var(--text-color);

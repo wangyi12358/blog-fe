@@ -9,13 +9,8 @@ type Props = {};
  */
 const Footer: React.FC<Props> = () => {
   return (
-    <footer className="flex items-center mt-6 justify-center py-6 px-10 relative layout-container rounded-t-sm animation-fade-in">
-      <div className="layout-background absolute" />
-      <div className="flex flex-col items-center w-full">
-        <Menu />
-        <div className="mt-3 mb-3 border-t border-solid border-gray-100 opacity-10 w-full" />
-        <div>© 2001 - 2023 Mika Wang.</div>
-      </div>
+    <footer className="">
+      This is my footer
     </footer>
   );
 }

@@ -1,7 +1,7 @@
 .menu {
   box-shadow: rgba(0, 0, 0, 0.04) 0 0 0 1px;
   border-radius: 20px;
-  @apply p-1 h-16 box-border items-center w-auto duration-300 mt-8
+  @apply p-1 h-16 box-border w-auto duration-300 mt-8
 }
 
 .menu-expand {
@@ -11,6 +11,10 @@
 .menu-item {
   border-radius: 20px;
   @apply w-14 h-14 flex justify-center items-center cursor-pointer duration-300 rounded-2xl
+}
+
+.menu-item-selected {
+  background-color: rgb(250, 250, 250);
 }
 
 .menu-item >svg {

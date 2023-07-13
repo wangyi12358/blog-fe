@@ -10,7 +10,7 @@ export interface AvatarProps {
 const Avatar: FC<AvatarProps> = memo(({ src, className }) => {
   return (
     <div className={classnames('avatar', className)}>
-      <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+      <div className="w-12 rounded-full ring-primary ring-offset-base-100 ring-offset-2">
         <img src={src} alt="" />
       </div>
     </div>

@@ -49,16 +49,12 @@ function PersonalInfo() {
 
   return (
     <div className="container-card animation-enter-from-bottom">
-      <div className="layout-background absolute" />
-      <div className="flex flex-col items-center">
-        <Avatar src="https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/avatar.jpg"/>
-        <div className="animation-enter-from-bottom text-center mt-2">@Mika_wang</div>
-        <h2 className="animation-enter-from-bottom text-center text-white font-bold title">Mika wang</h2>
-        {renderContacts()}
-        <div className="mt-4 w-80 text-center">
-          <Bio />
-        </div>
+      <Avatar className="mt-8" src="https://mika-resource.oss-cn-hangzhou.aliyuncs.com/blog/avatar.jpg"/>
+      <div className="animation-enter-from-bottom text-center mt-4">Mika Wang</div>
+      <div className="mt-4 w-80 text-center">
+        <Bio />
       </div>
+      {renderContacts()}
     </div>
   )
 }
@@ -92,7 +88,7 @@ function HomePage() {
   return (
     <>
       <PersonalInfo />
-      <Blogs />
+      {/*<Blogs />*/}
     </>
   );
 }
